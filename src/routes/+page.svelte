@@ -16,9 +16,9 @@
   <p>This is a sample paragraph demonstrating the default text styles.</p>
 
   <!-- Links -->
-  <a href="#">Home</a>
-  <a href="#">About</a>
-  <a href="#">Contact</a>
+  <a href="/">Home</a>
+  <a href="/">About</a>
+  <a href="/">Contact</a>
 
   <!-- Buttons -->
   <button>Subscribe</button>
