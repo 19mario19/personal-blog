@@ -45,6 +45,11 @@
     background-color: var(--l);
     box-shadow: var(--bs-sm);
     z-index: 9999;
+
+    position: sticky;
+    top: 0;
+
+    opacity: .88;
   }
 
   nav {
