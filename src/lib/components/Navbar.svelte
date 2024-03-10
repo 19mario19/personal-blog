@@ -18,21 +18,21 @@
           <a
             on:click={() => setActive(RoutePath.Home)}
             class:active={active === RoutePath.Home}
-            href="/">Home</a
+            href={RoutePath.Home}>Home</a
           >
         </li>
         <li>
           <a
             on:click={() => setActive(RoutePath.About)}
             class:active={active === RoutePath.About}
-            href="/about">About</a
+            href={RoutePath.About}>About</a
           >
         </li>
         <li>
           <a
             on:click={() => setActive(RoutePath.Contact)}
             class:active={active === RoutePath.Contact}
-            href="/contact">Contact</a
+             href={RoutePath.Contact}>Contact</a
           >
         </li>
       </ul>

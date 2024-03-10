@@ -17,6 +17,10 @@ enum RoutePath {
   Random = "/random",
 }
 
+enum ApiRoutePath {
+  Posts = "/api/posts",
+}
+
 type NavItem = {
   id?: ID
   label: string
@@ -68,6 +72,6 @@ enum ContainerDimension {
   ExtraLarge = "max-width: var(--bp-2xl);",
 }
 
-export { PersonName, RoutePath, BlogCategory, ContainerDimension }
+export { PersonName, RoutePath, BlogCategory, ContainerDimension, ApiRoutePath }
 
 export type { ID, Author, NavItem, NavList, ParagraphContent, BlogPost }

@@ -8,7 +8,7 @@
 
 <Container dimentions={ContainerDimension.ExtraLarge}>
   <div class="section1">
-    <pre class="json-pre">{JSON.stringify(props, null, 2)}</pre>
+    <pre class="json-pre">{JSON.stringify(props, null, 4)}</pre>
   </div>
 </Container>
 
