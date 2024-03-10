@@ -11,3 +11,10 @@
   <slot />
 </main>
 <Footer />
+
+<style>
+  main {
+    background-color: var(--l-35);
+    padding: var(--sp-base) var(--sp-lg);
+  }
+</style>

@@ -7,6 +7,3 @@
 <div class="container" style={dimentions}>
   <slot />
 </div>
-
-
-
