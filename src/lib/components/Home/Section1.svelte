@@ -25,5 +25,12 @@
 <style>
   .section1 {
     display: flex;
+    padding: var(--sp-base) var(--sp-lg);
+  }
+
+  @media screen and (max-width: 717px) {
+    .section1 {
+      padding: 0;
+    }
   }
 </style>
