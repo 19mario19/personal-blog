@@ -10,6 +10,10 @@
 </Container>
 
 <style>
+  footer {
+    padding: var(--sp-base) var(--sp-lg);
+  }
+
   .bottom {
     text-align: center;
   }
