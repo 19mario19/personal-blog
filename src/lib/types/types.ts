@@ -42,7 +42,8 @@ type ParagraphContent = {
   description?: string
   image?: string
   quotes?: string
-  list?: string[]
+  ul?: string[]
+  ol?: string[]
 }
 
 type BlogPost = {
