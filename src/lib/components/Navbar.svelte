@@ -67,7 +67,7 @@
     color: var(--a);
   }
 
-  @media screen and (max-width: 717px) {
+  @media screen and (max-width: 768px) {
     ul {
       flex-wrap: wrap;
     }
