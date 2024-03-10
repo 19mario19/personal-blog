@@ -36,12 +36,17 @@ enum BlogCategory {
   Tech = "Tech",
 }
 
+type Quote = {
+  content: string
+  author: string
+}
+
 type ParagraphContent = {
   subheading?: string
   subtitle?: string
   description?: string
   image?: string
-  quotes?: string
+  quote?: Quote
   ul?: string[]
   ol?: string[]
 }

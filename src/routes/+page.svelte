@@ -6,4 +6,4 @@
   export let data: PageData
 </script>
 
-<Section1 />
+<Section1 props={data.blogPosts} />
