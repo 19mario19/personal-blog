@@ -10,7 +10,7 @@
 
 <div class="container-wrapper">
   <Container dimentions={ContainerDimension.ExtraLarge}>
-    <nav>
+    <nav aria-label="Main Navigation">
       <h1>Denali</h1>
       <ul>
         <li>
