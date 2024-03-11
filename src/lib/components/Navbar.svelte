@@ -1,16 +1,11 @@
 <script lang="ts">
+  import { page } from "$app/stores"
   import { ContainerDimension, RoutePath } from "$lib/types/types"
   import Container from "./shared/Container.svelte"
 
-  let active: RoutePath = RoutePath.Home
+  let active: RoutePath = $page.url.pathname as RoutePath
 
-  function setActive(e?: Event): void {
-    const target = e?.target as HTMLElement
-    const newActive = target.dataset.active as RoutePath
-    if (newActive) {
-      active = newActive as RoutePath
-    }
-  }
+  $: active = $page.url.pathname as RoutePath
 </script>
 
 <div class="container-wrapper">
@@ -19,26 +14,18 @@
       <h1>Denali</h1>
       <ul>
         <li>
-          <a
-            on:click={setActive}
-            class:active={active === RoutePath.Home}
-            data-active={RoutePath.Home}
-            href={RoutePath.Home}>Home</a
+          <a class:active={active === RoutePath.Home} href={RoutePath.Home}
+            >Home</a
+          >
+        </li>
+        <li>
+          <a class:active={active === RoutePath.About} href={RoutePath.About}
+            >About</a
           >
         </li>
         <li>
           <a
-            on:click={setActive}
-            class:active={active === RoutePath.About}
-            data-active={RoutePath.About}
-            href={RoutePath.About}>About</a
-          >
-        </li>
-        <li>
-          <a
-            on:click={setActive}
             class:active={active === RoutePath.Contact}
-            data-active={RoutePath.Contact}
             href={RoutePath.Contact}>Contact</a
           >
         </li>
