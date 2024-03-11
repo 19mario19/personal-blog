@@ -4,8 +4,12 @@
 
   let active: RoutePath = RoutePath.Home
 
-  function setActive(newActive: RoutePath): void {
-    active = newActive
+  function setActive(e?: Event): void {
+    const target = e?.target as HTMLElement
+    const newActive = target.dataset.active as RoutePath
+    if (newActive) {
+      active = newActive as RoutePath
+    }
   }
 </script>
 
@@ -16,23 +20,26 @@
       <ul>
         <li>
           <a
-            on:click={() => setActive(RoutePath.Home)}
+            on:click={setActive}
             class:active={active === RoutePath.Home}
+            data-active={RoutePath.Home}
             href={RoutePath.Home}>Home</a
           >
         </li>
         <li>
           <a
-            on:click={() => setActive(RoutePath.About)}
+            on:click={setActive}
             class:active={active === RoutePath.About}
+            data-active={RoutePath.About}
             href={RoutePath.About}>About</a
           >
         </li>
         <li>
           <a
-            on:click={() => setActive(RoutePath.Contact)}
+            on:click={setActive}
             class:active={active === RoutePath.Contact}
-             href={RoutePath.Contact}>Contact</a
+            data-active={RoutePath.Contact}
+            href={RoutePath.Contact}>Contact</a
           >
         </li>
       </ul>
@@ -49,7 +56,7 @@
     position: sticky;
     top: 0;
 
-    opacity: .88;
+    opacity: 0.95;
   }
 
   nav {
